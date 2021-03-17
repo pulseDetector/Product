@@ -36,8 +36,8 @@ public class SubscribedProductService {
 
 	public SubscribedProductDTO getSpecificSubProduct(Integer buyerId, Integer productId) {
 		CompositeKey compKey = new CompositeKey(buyerId, productId);
-		Optional<SubscribedProduct> subProd = subsProductRep.findById(compKey);
-		SubscribedProductDTO subProdDTO = SubscribedProductDTO.valueOf(subProd.get());
+		SubscribedProduct subProd = subsProductRep.findById(compKey).get();
+		SubscribedProductDTO subProdDTO = SubscribedProductDTO.valueOf(subProd);
 		return subProdDTO;
 	}
 	
