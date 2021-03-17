@@ -11,6 +11,7 @@
 	<groupId>com.infy</groupId>
 	<artifactId>Product</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>Product</name>
 	<description>Product MicroService</description>
 	<properties>
